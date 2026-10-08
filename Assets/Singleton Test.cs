@@ -12,6 +12,6 @@ public class SingletonTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SingletonExample.Instance.enemiesDefeated += 1;
+        //SingletonExample.Instance.enemiesDefeated += 1;
     }
 }
