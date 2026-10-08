@@ -23,4 +23,9 @@ public class SingletonExample : MonoBehaviour
     {
         Debug.Log(enemiesDefeated);
     }
+
+    private void FruitSummoner(Transform transform)
+    {
+        //Have a random fruit spawn at the location of the dead enemy via the factory
+    }
 }

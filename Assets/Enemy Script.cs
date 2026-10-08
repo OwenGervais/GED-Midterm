@@ -6,6 +6,8 @@ public class EnemyScript : MonoBehaviour
     {
         SingletonExample.Instance.enemiesDefeated += 1;
 
+        //SingletonExample.Instance.FruitSummoner(this.transform.position);
+
         Destroy(this.gameObject);
     }
 }
