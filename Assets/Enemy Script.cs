@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         SingletonExample.Instance.enemiesDefeated += 1;
 
