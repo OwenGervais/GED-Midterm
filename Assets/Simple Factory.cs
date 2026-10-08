@@ -16,6 +16,7 @@ public class SimpleFactory : MonoBehaviour
         public override void Process()
         {
             Debug.Log("Peach");
+            //Spawn Peach at enemy transform position
         }
     }
 
@@ -26,6 +27,7 @@ public class SimpleFactory : MonoBehaviour
         public override void Process()
         {
             Debug.Log("Bellpepper");
+            //Spawn Bellpepper at enemy transform position
         }
     }
 
