@@ -29,7 +29,7 @@ public class SimpleFactory : MonoBehaviour
         }
     }
 
-    public class AbilityFactory
+    public class FruitFactory
     {
         public MakeFruit GetFruit(string fruitType)
         {
