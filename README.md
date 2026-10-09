@@ -1,13 +1,10 @@
 Owen Gervais - 100884566
 
-Even though I couldn't get it done I was planning on having the enemies die on contact with the player, and a fruit (Bellpepper or peach) would be spat out.
-it would randomly choose between the two with rng. 
+OOP: The factory is implemented as an object-oriented programming abstraction. I would've also used inheritance for the actual fruits themselves as they would've been virtually the same object just with a texture change. I tried the best I could with the time given to have my classes be properly encapsulated, but running low on time I thought other things would be more productive to be worked on.
 
-I unfortunately could not figure out how to call upon the factory so I could never get it to actually function.
+Singleton: The unique way I decided to implement the singleton was as a Enemy tracker/Factory trigger. I wasn't able to get the factory triggering part done but the Singleton still properly counts how many enemies you defeated. The singleton is made an instance and can be called from anywhere, it also stores and tracks one piece of data that is updated when an enemy dies. When the script is awake it will check if another of the same script exists then destroy itself if it does. DontDestroyOnLoad() preserves the instance between scenes. Every update the number of enemies defeated is logged within the debug menu, I would've rather had it appear on screen with some sort of TMP text but I didn't have time. The FruitSummoner function would serve to send the location of the dead enemy to the Factory so that it could spawn a fruit there, as well as what kind of fruit it would send.
 
-The singleton would keep track of all enemies killed by the player, as well as tell the factory to spawn a fruit at that enemy's location.
-
-The Player movement didn't turn out too good. 
+Factory: The unique way I chose to implement my factory was to almost act as a "enemy corpse spawner," Whenever an enemy is defeated it would turn into a fruit. Which fruit would spawn would be RNG. MakeFruit defines what all fruit types must include, and MakePeach and MakeBellpepper are deriving off of that. FruitFactory uses a switch statement to decide which fruit to create, separating object creation from the code that uses the fruit. The factory returns an instance of the chosen class. I believe the scalability of this factory could've been greatly improved by using a list of Make fruit classes that specifically weren't abstract and then using that list to feed into the Random Number Generator. Unfortunately, there wasn't enough time for me to fully implement this.
 
 All code that wasn't written during this exam was apart of this repo: https://github.com/OwenGervais/Game-Engine-Design
-Mostly all of the code was modified in a way.
+The main code I used was the Movement script from the repo, but I also looked at the singleton and Factory code to base the code in this repository off but I didn't directly paste it into the project.
